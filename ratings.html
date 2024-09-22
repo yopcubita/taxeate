@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxéate - Calificaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="#" id="lang-switch">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ratings">
+            <h1>Calificaciones de Conductores</h1>
+            <div class="driver-profile">
+                <img src="driver.jpg" alt="Conductor">
+                <h2>Juan Pérez</h2>
+                <p>Calificación Promedio: 4.8 estrellas</p>
+                <div class="stars">
+                    ★★★★☆
+                </div>
+                <p>Comentarios:</p>
+                <ul>
+                    <li>"Excelente servicio, muy puntual." - Usuario A</li>
+                    <li>"Muy amable y profesional." - Usuario B</li>
+                </ul>
+            </div>
+            <form action="rate.php" method="post">
+                <h2>Califica a tu Conductor</h2>
+                <label for="driver">Conductor:</label>
+                <select id="driver" name="driver">
+                    <option value="juan_perez">Juan Pérez</option>
+                    <option value="maria_garcia">María García</option>
+                </select>
+                
+                <label for="rating">Calificación:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1 estrella</option>
+                    <option value="2">2 estrellas</option>
+                    <option value="3">3 estrellas</option>
+                    <option value="4">4 estrellas</option>
+                    <option value="5">5 estrellas</option>
+                </select>
+                
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                
+                <button type="submit" class="btn">Enviar Calificación</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Taxéate. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

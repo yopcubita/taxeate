@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxéate - Reserva</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="#" id="lang-switch">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reserve">
+            <h1>Reserva tu Taxi</h1>
+            <form action="reserve.php" method="post">
+                <label for="pickup">Punto de Recogida:</label>
+                <input type="text" id="pickup" name="pickup" required>
+                
+                <label for="destination">Destino:</label>
+                <input type="text" id="destination" name="destination

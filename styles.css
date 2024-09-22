@@ -1,0 +1,130 @@
+/* Paleta de colores */
+body {
+    background-color: #ffffff; /* Blanco */
+    color: #000080; /* Azul oscuro */
+    font-family: "Roboto Slab", serif;
+}
+
+/* Tipografía */
+.roboto-slab-unique {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Puedes cambiar el peso según sea necesario */
+    font-style: normal;
+}
+
+/* Diseño de la disposición similar a Uber */
+header {
+    background-color: #000080; /* Azul oscuro */
+    color: #ffffff; /* Blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #f0f0f0; /* Gris claro */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #000080; /* Azul oscuro */
+    color: #ffffff; /* Blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0000ff; /* Azul más claro */
+}
+
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    background-color: #f0f0f0; /* Gris claro */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #000080; /* Azul oscuro */
+    color: #ffffff; /* Blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Animaciones y transiciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero, .features, .testimonials {
+    animation: fadeIn 1s ease-in-out;
+}
